@@ -1,0 +1,20 @@
+%% DevSecOps pipeline: security gates woven through build-to-deploy
+flowchart LR
+    push[git push] --> build[Build & Test<br/>mvn verify · GATE]
+    build --> secrets[Secret Scan<br/>gitleaks · GATE]
+    secrets --> scans
+
+    subgraph scans["Security Scans (report-only, parallel)"]
+        direction TB
+        sast[SAST<br/>Semgrep]
+        deps[Dependencies + FS<br/>Trivy]
+        iac[IaC<br/>Checkov]
+    end
+
+    scans --> image[Build Image<br/>multi-stage, non-root]
+    image --> imgscan[Image Scan + SBOM<br/>Trivy · Syft]
+    imgscan --> deploy[Deploy]
+    deploy --> smoke[Smoke Test<br/>curl /health]
+
+    classDef gate fill:#fde2e1,stroke:#d33,color:#111;
+    class build,secrets gate;

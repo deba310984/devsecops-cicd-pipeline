@@ -1,0 +1,9 @@
+target/
+.git/
+.github/
+docs/
+infra/
+*.md
+Jenkinsfile
+.idea/
+.vscode/

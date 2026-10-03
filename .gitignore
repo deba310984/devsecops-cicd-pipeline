@@ -1,0 +1,24 @@
+# Maven
+target/
+*.jar
+*.war
+
+# Terraform
+**/.terraform/*
+*.tfstate
+*.tfstate.*
+*.tfvars
+!*.tfvars.example
+.terraform.lock.hcl
+
+# Security scan outputs
+*.sarif
+trivy-results.*
+sbom.*
+
+# Logs / OS / editor
+*.log
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
