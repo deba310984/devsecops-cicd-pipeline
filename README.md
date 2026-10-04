@@ -12,11 +12,11 @@
 
 <br/>
 
-### 🎬 24-second explainer
+### 🎬 Explainer
 
-[![Watch the explainer video](media/poster.jpg)](media/explainer.mp4)
+![Explainer video](media/demo.gif)
 
-*Click the image to play the video.*
+*▶ [Watch the full-quality MP4](media/explainer.mp4)*
 
 </div>
 
