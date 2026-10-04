@@ -10,6 +10,14 @@
 [![Checkov](https://img.shields.io/badge/Checkov-IaC-6C47FF?style=flat-square)](https://www.checkov.io/)
 [![Docker](https://img.shields.io/badge/Docker-hardened_image-2496ED?style=flat-square&logo=docker&logoColor=white)](https://www.docker.com/)
 
+<br/>
+
+### 🎬 24-second explainer
+
+[![Watch the explainer video](media/poster.jpg)](media/explainer.mp4)
+
+*Click the image to play the video.*
+
 </div>
 
 ---
